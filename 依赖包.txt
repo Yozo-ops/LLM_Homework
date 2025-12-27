@@ -1,0 +1,13 @@
+# 基础核心依赖（必装）
+pip install streamlit langchain langchain-community langchain-text-splitters langchain-huggingface langchain-chroma langchain-core
+# HuggingFace 生态依赖（必装）
+pip install transformers torch huggingface-hub
+# 向量数据库依赖（必装）
+pip install chromadb
+# 辅助工具依赖（必装）
+pip install tqdm
+# 可选：如果安装 chromadb 时遇到依赖问题，执行下面的指令（适配不同系统）
+pip install chromadb --upgrade --force-reinstall
+
+# Windows/Linux GPU 版本（需先安装 CUDA）
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
